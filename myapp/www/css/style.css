@@ -28,10 +28,20 @@
     width: 90%;
     height: 140px;
     margin: auto;
+    margin-top: 15%;
 }
 
 .suggestion{
     background-image: url("../img/suggestion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 140px;
+    margin: auto;
+}
+
+.choisir {
+    background-image: url("../img/choisir.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 90%;
