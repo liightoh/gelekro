@@ -1,9 +1,45 @@
 <ion-view view-title="Account">
   <ion-content>
-    <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
-    </ion-list>
+
+
+
+      <img src="img/texte-filtre.png" id="filtre" height="50px"/>
+
+    <div ng-app="resto">
+
+
+      <div ng-controller="RestoCtrl">
+
+
+        <div id="left">
+
+          <input type="checkbox" class="checkbox" ng-click="includeType('Copieux')"/> Copieux <br/>
+          <input type="checkbox"  class="checkbox"  ng-click="includeType('Pizzeria')"/> Pizzeria <br/>
+          <input type="checkbox" class="checkbox" ng-click="includeType('Restaurant')"/> Restaurant <br/>
+          <input type="checkbox" class="checkbox" ng-click="includeType('Fast Food')"/> Fast Food <br/>
+
+
+        </div>
+
+        <div id="right">
+
+          <input type="checkbox" class="checkbox" ng-click="includeType('Mexicain')"/> Mexicain  <br/>
+          <input type="checkbox"  class="checkbox"ng-click="includeType('Vegetarien')"/> Vegetarien  <br/>
+          <input type="checkbox" class="checkbox" ng-click="includeType('Halal')"/> Halal  <br/>
+          <input type="checkbox" class="checkbox" ng-click="includeType('Asiatique')"/> Asiatique  <br/>
+
+        </div>
+        <ul>
+          <li ng-repeat="f in resto | filter:TypeFilter">
+            {{f.name}}
+          </li>
+        </ul>
+
+        <img src="img/gélékro.jpg" height="70px" id="validation"/>
+
+      </div>
+    </div>
+
+
   </ion-content>
 </ion-view>
