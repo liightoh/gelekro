@@ -1,1 +1,40 @@
 /* Empty. Add your own CSS if you like */
+
+.tabs{
+    background-color: #4cd964;
+}
+.buttonfiltre{
+    background-image: url("../img/buttonfiltre.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    text-align: left;
+}
+
+.logo{
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.tab-item{
+    max-width: inherit;
+}
+
+.aleatoire{
+    background-image: url("../img/aleatoire.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 140px;
+    margin: auto;
+}
+
+.suggestion{
+    background-image: url("../img/suggestion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 140px;
+    margin: auto;
+}
