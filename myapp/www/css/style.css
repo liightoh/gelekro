@@ -49,10 +49,20 @@
     margin: auto;
 }
 
-    HEAD
 .imgchoisir{
-    
+    width: 65%;
+    height: auto;
 }
+
+.blockchoisir{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+    HEAD
 
 #filtre{
     margin-left: 20%;
