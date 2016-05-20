@@ -78,6 +78,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+      .state('tab.random', {
+          url: '/random',
+          views: {
+              'tab-account': {
+                  templateUrl: 'templates/tab-random.html',
+                  controller: 'RandomCtrl'
+              }
+          }
+      })
 
   .state('tab.choisir', {
     url: '/choisir',
