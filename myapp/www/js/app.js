@@ -78,6 +78,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('tab.choisir', {
+    url: '/choisir',
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/tab-choisir.html',
+        controller: 'ChoisirCtrl'
+      }
+    }
+  })
       .state('tab.random', {
           url: '/random',
           views: {
@@ -87,16 +96,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
               }
           }
       })
-
-  .state('tab.choisir', {
-    url: '/choisir',
-    views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-choisir.html',
-        controller: 'ChoisirCtrl'
-      }
-    }
-  });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');

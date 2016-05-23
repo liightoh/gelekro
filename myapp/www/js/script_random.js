@@ -38,9 +38,30 @@ function getRandomImage(imgAr, path) {
         case 8 :
             url = "http://www.subwayfrance.fr/trouver-un-restaurant";
             break;
+        case 9 :
+            url = "https://www.burgerking.fr/";
+            break;
     }
+    
+    
     var img = imgAr[ num ];
-    var imgStr = '<img src="' + path + img + '" onclick="window.open('+ url +');" >';
-    document.write(imgStr); document.close();
 
-    }
+    $url = url;
+
+    $path = path;
+
+    $img  = img;
+
+    $chemin = $path + $img;
+
+
+    document.getElementById("image").src = $chemin;
+
+
+    document.getElementById("recherche").onclick = window.open($url);
+
+
+
+}
+
+

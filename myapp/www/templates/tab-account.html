@@ -1,6 +1,5 @@
-<ion-view view-title="Account">
+<ion-view view-title="account">
   <ion-content>
-
 
 
       <img src="img/texte-filtre.png" id="filtre" height="50px"/>
@@ -8,12 +7,12 @@
     <div ng-app="resto">
 
 
-      <div ng-controller="RestoCtrl">
+      <div>
 
 
         <div id="left">
 
-          <input type="checkbox" class="checkbox" ng-click="includeType('Copieux')"/> Copieux <br/>
+          <input type="checkbox" id="copieux" class="checkbox" ng-click="includeType('Copieux')"/> Copieux <br/>
           <input type="checkbox"  class="checkbox"  ng-click="includeType('Pizzeria')"/> Pizzeria <br/>
           <input type="checkbox" class="checkbox" ng-click="includeType('Restaurant')"/> Restaurant <br/>
           <input type="checkbox" class="checkbox" ng-click="includeType('Fast Food')"/> Fast Food <br/>
@@ -35,7 +34,7 @@
           </li>
         </ul>
 
-        <img src="img/gélékro.jpg" height="70px" id="validation"/>
+        <img src="img/gélékro.jpg" height="70px" id="validation" ng-click="filtrer()"/>
 
       </div>
     </div>

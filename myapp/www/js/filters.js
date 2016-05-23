@@ -1,8 +1,9 @@
-'use strict'
+/*'use strict'
 
 angular.module('resto', [])
 
 function RestoCtrl($scope){
+    //
     $scope.resto = [
         {'name': 'ChickenSpot', 'Type': 'Halal'},
         {'name': 'Planet Sushi', 'Type': 'Asiatique'},
@@ -35,3 +36,21 @@ function RestoCtrl($scope){
     }
 }
 
+
+*/
+
+
+function filtrer($id){
+
+    var x = document.getElementById($id).checked
+
+    alert(x);
+
+    console.log(x);
+
+}
+
+
+$scope.filtrer = function() {
+    alert("working");
+};
